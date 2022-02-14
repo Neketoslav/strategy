@@ -1,0 +1,16 @@
+{
+    "name": "UIModel",
+    "rootNamespace": "",
+    "references": [
+        "GUID:033b4b7ee6deced49bbd9132b76f1646"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
