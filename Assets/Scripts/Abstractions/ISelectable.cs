@@ -2,7 +2,7 @@ using UnityEngine;
 
 
 
-public interface ISelectable
+public interface ISelectabale
 {
     float Health { get; }
     float MaxHealth { get; }
