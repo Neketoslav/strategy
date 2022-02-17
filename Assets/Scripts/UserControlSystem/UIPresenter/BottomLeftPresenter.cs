@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -25,7 +23,7 @@ public class BottomLeftPresenter : MonoBehaviour
         onSelected(_selectedValue.CurrentValue);
     }
 
-    private void onSelected(ISelectable selected)
+    private void onSelected(ISelectabale selected)
     {
         _selectedImage.enabled = selected != null;
         _healthSlider.gameObject.SetActive(selected != null);
