@@ -2,10 +2,10 @@ using UnityEngine;
 
 
 
-public interface ISelectabale
+public interface ISelectabale : IHealthHolder
 {
-    float Health { get; }
-    float MaxHealth { get; }
+    Transform PivotPoint { get; }
+
     Sprite Icon { get; }
     Outline Outline { get; set; }
     
