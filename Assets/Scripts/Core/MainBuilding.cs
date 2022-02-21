@@ -1,9 +1,7 @@
 using UnityEngine;
 
-public class MainBuilding : MonoBehaviour, IUnitProducer, ISelectable
+public class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISelectabale
 {
-    [SerializeField]
-    private GameObject _unitPrefabs;
 
     [SerializeField]
     private Transform _unitsParents;
@@ -32,10 +30,13 @@ public class MainBuilding : MonoBehaviour, IUnitProducer, ISelectable
         _outline.OutlineWidth = 0;
     }
 
-    public void ProduceUnit()
+    public override void ExecuteSpecificCommand<T>(T command)
     {
-        Instantiate(_unitPrefabs, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10)), Quaternion.identity, _unitsParents);
+        Debug.Log("a");
     }
 
-
+    //public override void ExecuteSpecificCommand<T>(IProduceUnitCommand command)
+    //{
+    //    Instantiate(command.UnitPrefab, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10)), Quaternion.identity, _unitsParents);
+    //}
 }
